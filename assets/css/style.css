@@ -243,3 +243,41 @@ h1, h2, h3,h4, h5, h6 {
     font-size: 24px;
     color: #333;
 }
+.section__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+}
+.section__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px  auto ;
+    background-color: #f38181;
+}
+.section__text{
+    font-size: 15px;
+    color: #999;
+}
+
+/*About*/
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+.about__item  {
+    width: 30%;
+}  
+.about__item:hover .about__img img {
+    opacity: .7;
+
+}
+.about__img {
+    background: linear-gradient(to bottom, 
+    #f38181,#fce38a);
+}
+.about__img img{
+    transition: opacity .1s linear;
+}
